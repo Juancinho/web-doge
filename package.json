@@ -1,41 +1,44 @@
 {
-  "name": "react",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://juancinho.github.io/web-doge/",
-  "keywords": [],
-  "main": "src/index.tsx",
+  "name": "nombre-de-tu-aplicacion",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://tu-usuario.github.io/nombre-del-repo",
   "dependencies": {
-    "@emotion/react": "11.11.4",
-    "@emotion/styled": "11.11.5",
-    "@mui/material": "5.15.20",
-    "gh-pages": "^6.1.1",
-    "lucide-react": "0.396.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "recharts": "2.12.7"
-  },
-  "devDependencies": {
-    "@types/react": "18.2.38",
-    "@types/react-dom": "18.2.15",
-    "@vitejs/plugin-react": "^4.2.1",
-    "typescript": "4.4.4",
-    "vite": "^5.0.11"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "vite",
-    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
